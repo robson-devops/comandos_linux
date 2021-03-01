@@ -1,0 +1,17 @@
+                                                 ---| VERIFY PROCESS | ---
+
+-|States:
+Running | Stoped | Sleeping | Zombie
+
+-| By name:
+# ps -ef | grep -i java
+# ps aux | grep sshd
+# killall httpd
+
+-| By PID:
+# ps -f | grep <pid_id>
+
+-| Kill Process:
+# kill <PID>
+# kill -9 <PID>
+# kill -1 <PID> (reload configuration file)

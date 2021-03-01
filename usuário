@@ -1,0 +1,8 @@
+                                                ---| VERIFY USERS | ---
+
+-| Informations:
+# cat /etc/passwd
+# getent
+
+-| By name:
+# grep -inr root /etc/passwd

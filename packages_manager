@@ -1,0 +1,45 @@
+                                                 ---| PACKAGES MANAGER .deb | ---
+
+-| Information:
+# dpkg -l <package_name>
+# dpkg -s <package_name>
+
+-| Consult:
+# apt-cache search <package_name>
+# apt-cache show <package_name>
+# aptitude search <package_name>
+
+-| Update:
+# apt-get update
+# aptitude update
+
+-| Install:
+# apt-get install <program_name>
+# aptitude install <program_name>
+
+-| Remove:
+# apt-get remove <program_name>
+# aptitude remove <program_name>
+
+
+
+                                                  ---| PACKAGES MANAGER .rpm | ---
+
+-| Information:
+# rpm -qa | grep -i <package_name>
+# rpm -V <package_name>
+
+-| Consult:
+# rpm -i <package_name>
+
+-| Update:
+# yum update <program_name>
+# rpm -U <package_name>
+
+-| Install:
+# yum install <program_name>
+# rpm -ivh <package_name>
+
+-| Remove:
+# yum remove <program_name>
+# rpm -e <package_name>

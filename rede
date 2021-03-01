@@ -1,0 +1,9 @@
+                                                ---| VERIFY NETWORK | ---
+
+-| Verify all interfaces:
+# ip a
+# ifconfig -a
+
+-| Verify Route Table:
+# ip r
+# route -n

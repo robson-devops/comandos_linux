@@ -1,0 +1,74 @@
+                                                  ---| BASIC COMMANDS | ---
+
+-| Listagem:
+# ls -larth dir/
+# ls -larth dir/ | wc -l (show number of line)
+# ls -ld dir/
+# tree dir/
+# tree -d dir/
+
+-| Criar arquivos:
+# > file2
+# touch file2
+# mkdir -p dir1/dir1/dir3
+
+-| Remover arquivos:
+# rm file
+# rm -r dir1 (empty or full)
+# rmdir dir1 (if empty)
+# ls file*.txt | xargs rm
+
+-| Copiar/Mover arquivos:
+# cp -a file file1
+# cp -vr dir1/ /tmp/
+# mv file1 file2 (rename)
+# mv file /tmp/ (move)
+
+-| Wildcards:
+# ls *.sh
+# ls script?.sh
+# ls script[1-4].sh
+# ls script[1,3-5].sh
+
+-| Redirecionadores:
+# > or 1> (output hit)
+# < (input)
+# 2> (output error)
+# &> (output error ou hit)
+# >> (output append)
+# command1 | command2 | command3 | ... 
+# command1 && command2 (If command1 success, than execute command2)
+# command1 || command2 (If command1 error, than execute command2)
+
+-| Exibir conteúdo do arquivo:
+# cat -n file
+# tac -n file
+# less file
+# head -n<number> file
+# tail -n <number> file
+# tail -f 100 /var/log/httpd.log (type control+c for exit)
+
+-| Pesquisa:
+# grep -i <value> file
+# grep -inr <value> dir/
+# grep -E "value1|value2" <value> file
+
+# sed '1,2' file (delete lines 1 and 2)
+
+# cut -d: -f1-3 /etc/passwd
+
+# find / -iname file
+
+-| Hardware:
+# free -g
+# uptime
+# uname -a
+# date -s "mm/dd/yyyy hh:mm:ss"
+
+-| Backup:
+# tar -czvf users.tar.gzip /home/
+# tar -xzvf users.tar.gzip -C /tmp/
+
+# tar -cjvf users.tar.bzip2 /home/
+# tar -xjvf users.tar.bzip2 -C /tmp/
+

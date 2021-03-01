@@ -1,0 +1,15 @@
+                                                ---| FIREWALL IPTABLES | ---
+
+-| Verify all rules:
+# iptables -nvL
+
+-| Clean all rules:
+# iptables -F
+
+                                               ---| FIREWALL FIREWALLD | ---
+
+-| Verify all rules:
+#  
+
+-| Clean all rules:
+# 

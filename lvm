@@ -1,0 +1,4 @@
+                                                      ---| LVM | ---
+-| Schema:
+(PV | PV) --> [VG1] --> |LV1| --> mount point1
+                |-----> |LV2| --> mount point2

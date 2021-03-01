@@ -1,0 +1,52 @@
+                                                ---| MANAGEMENT SERVICES (System V) | ---
+
+-| Configuration file:
+# vi /etc/inittab
+
+-| Directory Scripts:
+# /etc/init.d/*
+# /etc/rc[1,2,3,4,5,6].d/
+
+-| Reboot:
+# init 6
+
+-| Shutdown:
+# init 0
+
+-| Verify service:
+# service <service_name> status
+
+-| Management service:
+# service <service_name> stop | start| restart 
+
+-| Enable/Disable service:
+# chkconfig <service_name> on | off
+
+-| Show Runlevel:
+# runlevel
+
+-| Turn off SO:
+# shutdown -h now
+# halt
+
+
+                                                ---| MANAGEMENT SERVICES (System D) | ---
+
+-| Verify services:
+# systemctl list-units
+
+-| Verify service:
+# systemctl status <service_name>
+
+-| Management service:
+# systemctl stop | start| restart | reload <service_name>
+
+-| Enable/Disable service:
+# systemctl enable | disable| <service_name>
+
+-| Verifiy if the service is enabled:
+# systemctl is-enabled <service_name>
+
+-| Show Runlevel:
+# systemctl get-default
+

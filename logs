@@ -1,0 +1,10 @@
+                                                ---| LOGS | ---
+
+-| Consultar log de Boot
+# journalctl
+# journalctl --listboots
+# journalctl -b d0c6482793c4452f910273bbc80feebb
+
+# dmesg | grep -ie 'fail\|error\|warning\|alert\|emerg\|crit'
+
+# logger -s "Message" (send to /var/log/messages)

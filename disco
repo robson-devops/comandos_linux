@@ -1,0 +1,22 @@
+                                                ---| MANAGEMENT DISKS | ---
+
+-| Verificar ponto de montagem:
+# df -hT
+
+-| Verificar tamanho do diretório:
+# du -sh dir/
+
+-| Verificar partição:
+# cat /proc/partitions
+
+-| Tabela de File System:
+# cat /etc/fstab
+
+-| Montar sistema de arquivos:
+# mount -t <filesystem> <partition_name> <folder_name>
+# mount -a 
+
+-| Desmontar sistema de arquivos:
+# umount <folder_name>
+# umount <partition_name>
+# umount -a 
